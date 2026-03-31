@@ -1,0 +1,37 @@
+{
+  "stats": {
+    "deaths": 3,
+    "blocks_mined": 0,
+    "mobs_killed": 0,
+    "chunks_visited": 0,
+    "playtime": 1297
+  },
+  "deaths": [
+    {
+      "x": -7,
+      "y": 70,
+      "z": 17,
+      "dimension": "overworld",
+      "items": [],
+      "date": "2026-03-31T06:03:47.204Z"
+    },
+    {
+      "x": -6,
+      "y": 69,
+      "z": 16,
+      "dimension": "overworld",
+      "items": [],
+      "date": "2026-03-31T06:04:18.602Z"
+    },
+    {
+      "x": 10,
+      "y": 76,
+      "z": 4,
+      "dimension": "overworld",
+      "items": [],
+      "date": "2026-03-31T06:13:57.103Z"
+    }
+  ],
+  "actions": [],
+  "resources": {}
+}

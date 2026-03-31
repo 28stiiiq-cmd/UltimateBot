@@ -1,0 +1,55 @@
+{
+  "name": "mc-bot",
+  "version": "2.0.0",
+  "description": "Autonomous Minecraft Bot with GUI",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "app": "electron .",
+    "build": "electron-builder --win",
+    "build:portable": "electron-builder --win portable"
+  },
+  "build": {
+    "appId": "com.mcbot.app",
+    "productName": "MC Bot",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "web/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "MC Bot"
+    },
+    "portable": {
+      "artifactName": "MCBot-Portable.exe"
+    }
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "minecraft-data": "^3.67.0",
+    "mineflayer": "^4.20.1",
+    "mineflayer-pathfinder": "^2.4.5",
+    "socket.io": "^4.7.5",
+    "vec3": "^0.1.10"
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3"
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+    "autonomous": {
+        "enabled": true,
+        "aggression": 0.7,
+        "exploration_radius": 100,
+        "auto_eat_threshold": 15,
+        "auto_fight_threshold": 12,
+        "min_health_to_fight": 10,
+        "min_food_to_mine": 10
+    },
+    "priorities": {
+        "survival": 100,
+        "wood": 90,
+        "stone": 85,
+        "coal": 80,
+        "iron": 75,
+        "diamond": 70,
+        "exploration": 50
+    }
+}
